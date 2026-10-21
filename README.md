@@ -1,6 +1,8 @@
 # Strategy Pattern: Insurance Claims (SDP Assignment 5)
 
-Student: Ingkar, Astana IT University. Domain: Insurance Claims (same variant as Assignment 4).
+Student: Ingkar Tolegen. 
+Group:SE-2540
+Domain: Insurance Claims (same variant as Assignment 4).
 
 Two families of interchangeable algorithms, one context per family, one selector per family.
 
@@ -88,3 +90,7 @@ The payout family was first written the "bad" way: one class `PayoutCalculator` 
 - Context tests, including runtime replacement: `PayoutCalculatorTest`, `RiskAssessorTest`.
 - Parameterized tests that run one check on all strategies of a family: `AllPayoutStrategiesTest` (payout is never negative and never above the limit), `AllRiskStrategiesTest` (score is always between 0 and 100).
 - `ContextPurityTest`: contexts contain no `if`, `switch` or `instanceof`.
+
+## UML
+
+- [UML Diagram](UML-diagram-1.png)
